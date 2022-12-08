@@ -4,7 +4,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import styles from "../../styles/TraerDias.module.css";
-import EnviarDia from "../../Helpers/EnviarDia";
+import EnviarDia from "../../Helpers/EnviarDia.jsx";
 import { es } from "date-fns/locale/";
 import Button from "@mui/material/Button";
 
