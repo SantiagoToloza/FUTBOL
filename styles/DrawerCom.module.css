@@ -1,0 +1,9 @@
+.menu{
+    justify-content: flex-end;
+    color: white;
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    font-size: 2rem;
+
+}

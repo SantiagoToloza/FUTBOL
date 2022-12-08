@@ -1,0 +1,14 @@
+.hora{
+    background-color: rgba(32, 32, 146, 0.948);
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.probar{
+    color: white;
+}
+

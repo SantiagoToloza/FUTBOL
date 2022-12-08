@@ -1,0 +1,305 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../public/pure-futbol-wallpaper-thumb.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 41%;
+  background-position-y: 6%;
+  background-size: 230%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* height: 150vh; */
+  color: white;
+  padding: 0;
+  position: relative;
+  margin: 0%;
+  z-index: 1;
+}
+
+.title {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.cards {
+  /* height: 77vh; */
+  background-image: url(../public/fondo.png);
+  background-size: 100%;
+  width: 100%;
+  text-align: -webkit-center;
+  background-repeat: no-repeat;
+  background-position-x: 75%;
+  background-position-y: 3.6%;
+  /* position: absolute; */
+  top: 49%;
+}
+
+.wpp {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  position: relative;
+  /* top: 5%; */
+  right: 8%;
+}
+
+.reserva {
+  padding-top: 20%;
+  width: 100%;
+  text-align: center;
+
+}
+
+.pelota {
+  display: flex;
+  align-self: center;
+}
+
+.pBox {
+  margin-left: 7%;
+  
+}
+
+.titleCard{
+  text-align: center;
+  color: white;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.title{
+  color: white;
+}
+
+.box {
+  background-image: url(../public/fondo\ cards.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border-radius: 7px;
+  margin: 2%;
+  width: auto;
+  max-width: 150vh;
+  padding: 0.3em;
+  position: relative;
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+.box:hover {
+  transform: translateY(0px);
+}
+
+.box2:hover {
+  transform: translateY(0px);
+}
+
+.box3:hover {
+  transform: translateY(0px);
+}
+
+.box::before {
+  content: "";
+  background-color: #1ca68b;
+  z-index: -1;
+  border-radius: 7px;
+}
+
+.box::after {
+  content: "";
+  background-color: #1ca68b;
+  z-index: -1;
+  border-radius: 7px;
+}
+
+.box::before {
+  width: 0%;
+  height: 2%;
+  position: absolute;
+  top: 49%;
+  left: 0;
+  transition: width .2s cubic-bezier(.53, 0, .41, 1);
+}
+
+.box::after {
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transition: .3s cubic-bezier(.53, 0, .41, 1);
+  transition-delay: .2s;
+}
+
+.box:hover::before {
+  width: 100%;
+}
+
+.box:hover::after {
+  height: 100%;
+  top: 0;
+}
+
+.box2::before {
+  content: "";
+  background-color: #1ca68b;
+  z-index: -1;
+  border-radius: 7px;
+}
+
+.box2::after {
+  content: "";
+  background-color: #1ca68b;
+  z-index: -1;
+  border-radius: 7px;
+}
+
+.box2::before {
+  width: 0%;
+  height: 2%;
+  position: absolute;
+  top: 49%;
+  left: 0;
+  transition: width .2s cubic-bezier(.53, 0, .41, 1);
+}
+
+.box2::after {
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transition: .3s cubic-bezier(.53, 0, .41, 1);
+  transition-delay: .2s;
+}
+
+.box2:hover::before {
+  width: 100%;
+}
+
+.box2:hover::after {
+  height: 100%;
+  top: 0;
+}
+
+.box3::before {
+  content: "";
+  background-color: #1ca68b;
+  z-index: -1;
+  border-radius: 7px;
+}
+
+.box3::after {
+  content: "";
+  background-color: #1ca68b;
+  z-index: -1;
+  border-radius: 7px;
+}
+
+.box3::before {
+  width: 0%;
+  height: 2%;
+  position: absolute;
+  top: 49%;
+  left: 0;
+  transition: width .2s cubic-bezier(.53, 0, .41, 1);
+}
+
+.box3::after {
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transition: .3s cubic-bezier(.53, 0, .41, 1);
+  transition-delay: .2s;
+}
+
+.box3:hover::before {
+  width: 100%;
+}
+
+.box3:hover::after {
+  height: 100%;
+  top: 0;
+}
+
+@media only screen and (min-width :373px) {
+  .body {
+      background-position-x: 30%;
+      background-position-y: 5%;
+      background-size: 190%;
+  }
+  .container {
+      /* height: 140vh; */
+  }
+  .cards {
+      background-size: 100%;
+      background-position-x: 0%;
+      background-position-y: 0%;
+      /* height: 80vh; */
+      /* top: 43%; */
+  }
+}
+
+@media only screen and (min-width :558px) {
+  .body {
+      background-position-x: 30%;
+      background-position-y: 5%;
+      background-size: 190%;
+  }
+  .container {
+      /* height: 180vh; */
+  }
+  .cards {
+      background-size: 100%;
+      background-position-x: 0%;
+      background-position-y: 0%;
+      /* height: 90vh; */
+      /* top: 50%; */
+  }
+}
+
+@media only screen and (min-width :790px) {
+  .body {
+      background-position-x: 30%;
+      background-position-y: 5%;
+      background-size: 190%;
+  }
+  .container {
+      /* height: 220vh; */
+  }
+  .cards {
+      background-size: 100%;
+      background-position-x: 0%;
+      background-position-y: 0%;
+      /* height: 100vh; */
+      /* top: 55%; */
+  }
+}
+
+@media only screen and (min-width :992px) {
+  .body {
+      background-position-x: 30%;
+      background-position-y: 150%;
+      background-size: 230%;
+  }
+  .container {
+      /* height: 214vh; */
+  }
+  .cards {
+      background-size: 100%;
+      background-position-x: 0%;
+      background-position-y: 0%;
+      /* height: 120vh; */
+      /* top: 45%; */
+  }
+}

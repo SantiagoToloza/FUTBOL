@@ -1,0 +1,41 @@
+.traerDias {
+    background-color: rgba(63, 55, 71, 0.597);
+    height: 25vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url(../public/fondo.png);
+    background-size: 100%;
+    width: 100%;
+    text-align: -webkit-center;
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    background-position-y: 3.6%;
+    position: absolute;
+    top: 49%; */
+}
+
+.TraerDias_localizerP__XSGkS {
+    color: white;
+}
+
+.localizerP {
+    z-index: 10;
+    color: white;
+}
+
+.MuiFormControl-root {
+    z-index: 10;
+    color: white;
+}
+
+
+.color {
+    color: white;
+    background-color: white;
+}
+
+.textField__label {
+    color: white;
+}
