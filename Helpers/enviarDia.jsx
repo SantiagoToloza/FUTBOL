@@ -4,7 +4,7 @@ import ButtonGroup from "@mui/material/ButtonGroup";
 import { useState } from "react";
 import styles from "../styles/Enviar.module.css";
 
-const enviarDia = ({ datos, info }) => {
+const EnviarDia = ({ datos, info }) => {
   const [btnvalue, setBtnvalue] = useState("");
   const [mostrar, setMostrar] = useState(false);
   const [generar, setGenerar] = useState("");
@@ -71,4 +71,4 @@ const enviarDia = ({ datos, info }) => {
     </div>
   );
 };
-export default enviarDia;
+export default EnviarDia;
