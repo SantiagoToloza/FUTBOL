@@ -8,13 +8,12 @@ import styles from '../../styles/DrawerCom.module.css'
 const DrawerComp = () => {
   const [open, setOpen] = useState(false);
 
-  const num = 1
   return (
     <>
       <Drawer anchor="top" open={open} onClose={() => setOpen(false)}>
         <List>
           {linksArray.map((linksArray, index) => (
-            <ListItemButton sx={{ width: "0" } } key={num+1}>
+            <ListItemButton sx={{ width: "0" }}>
               <ListItemIcon>
                 <ListItemText>{linksArray}</ListItemText>
               </ListItemIcon>

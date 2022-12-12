@@ -4,7 +4,7 @@ import ButtonGroup from "@mui/material/ButtonGroup";
 import { useState } from "react";
 import styles from "../styles/Enviar.module.css";
 
-const EnviarDia = ({ datos, info }) => {
+const enviarDia = ({ datos, info }) => {
   const [btnvalue, setBtnvalue] = useState("");
   const [mostrar, setMostrar] = useState(false);
   const [generar, setGenerar] = useState("");
@@ -16,7 +16,7 @@ const EnviarDia = ({ datos, info }) => {
   const datosF = datos + " a las " + btnvalue + " hs ";
 
   const enviar = (datosF) => {
-    const msjP = `Buenos dias  queria alquilar la cancha + ${info} el dia `;
+    const msjP = `Hola, quiero alquilar la cancha + ${info} el dia `;
     const url = `https://api.whatsapp.com/send?phone=542213148680&text=${escape(
       msjP
     )}+${escape(datosF)}`;
@@ -71,4 +71,4 @@ const EnviarDia = ({ datos, info }) => {
     </div>
   );
 };
-export default EnviarDia;
+export default enviarDia;
