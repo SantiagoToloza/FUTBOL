@@ -17,7 +17,7 @@ const enviarDia = ({ datos, info }) => {
 
   const enviar = (datosF) => {
     const msjP = `Hola, quiero alquilar la cancha + ${info} el dia `;
-    const url = `https://api.whatsapp.com/send?phone=542213148680&text=${escape(
+    const url = `https://api.whatsapp.com/send?phone=542210303456&text=${escape(
       msjP
     )}+${escape(datosF)}`;
     setGenerar(url);
