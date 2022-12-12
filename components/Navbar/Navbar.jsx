@@ -21,10 +21,10 @@ const Navbar = () => {
           <>
             <Typography>FUTGOL</Typography>
             <DrawerComp>{linksArray}</DrawerComp>
-            { <DrawerComp >{linksArray}</DrawerComp> }
+            {<DrawerComp>{linksArray}</DrawerComp>}
           </>
         ) : (
-          <Grid sx={{ placeItems: "center" }} container >
+          <Grid sx={{ placeItems: "center" }} container>
             <Grid item xs={4}>
               <Typography>FUTGOL</Typography>
             </Grid>
@@ -34,8 +34,12 @@ const Navbar = () => {
                 indicatorColor="secondary"
                 textColor="inherit"
                 value={value}
+                justifyContent="center"
+                alignItems="center"
                 onChange={(e, val) => setValue(val)}
-              > <a href="#ubicacion"> </a>
+              >
+                {" "}
+                <a href="#ubicacion"> </a>
                 {linksArray.map((linksArray, index) => (
                   <Tab key={index} label={linksArray} />
                 ))}
